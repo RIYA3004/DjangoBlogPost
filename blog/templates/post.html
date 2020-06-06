@@ -1,0 +1,11 @@
+{% extends 'single-template.html' %}
+
+{% block title %}{{ post.title }}{%  endblock %}
+
+{% block entry %}
+
+<h1 style="color: darkgray">{{ post.title }}</h1>
+<div>
+    <div style="color: floralwhite">{{ post.context|linebreaks }}</div>
+</div>
+{% endblock %}
